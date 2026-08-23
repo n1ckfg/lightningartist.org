@@ -1,0 +1,273 @@
+body {
+	background: #000000;
+	color: 0b0b0b;
+	font-size: 14px;
+	font-family: Georgia, serif;
+	background-image: url("../images/bg4.gif");
+}
+
+a {
+	color: #dd0000;
+	text-decoration: none;
+	font-size: 1.1em;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a.demolink {
+	color: #66bbff;
+	font-weight: bold;
+}
+
+p {
+	margin-top: 1em;
+}
+
+ul {
+	list-style-type: circle;
+	/*margin-top: -0.75em;*/
+	margin-top: 0.1em;
+}
+
+ol {
+	margin-top: 0.1em;
+}
+
+@media only screen and (orientation:landscape) {
+	#container {
+		width: 642px;
+		height: 602px;
+		position: relative;
+		margin: auto;
+		/*border: 1px solid green;*/
+	}
+
+	#column_center {
+		background: #efefef;
+		width: 600px;
+		border: 1px solid red;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		padding: 20px;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+
+	.iframeplayer {
+		margin-left: 20px;
+		margin-bottom: 1em;
+		border: 0px;
+		width: 600px;
+		height: 340px;
+	}
+
+	.centeroffset {
+		margin-left: 6em;
+	}
+
+	.logogif {
+		width: 640px; 
+		height: 360px; 
+		margin-left: -31px; 
+		margin-bottom:1em; 
+		border: 1px solid red; 
+		background-image: url("../images/love_park_230629.gif");
+		background-position: 0% 55%;
+	}
+
+	.logogif2 {
+		width: 640px; 
+		height: 160px; 
+		margin-left: -132px; 
+		margin-bottom:1em; 
+		border: 1px solid red; 
+		background-image: url("../images/github_banner001.gif");
+	}
+
+	.bannervideo {
+		width: 640px; 
+		height: 340px; 
+		margin-left: -31px; 
+		margin-bottom:1em; 
+		border: 1px solid red; 
+		background-color: black;
+	}
+}
+
+@media only screen and (orientation:portrait) {
+	#container {
+		width: 442px;
+		height: 602px;
+		position: relative;
+		margin: 355px auto auto auto;
+		/*border: 1px solid green;*/
+		transform: scale(2.1);
+	}
+
+	#column_center {
+		background: #efefef;
+		width: 400px;
+		border: 1px solid red;	
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		padding: 20px;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+
+	.iframeplayer {
+		margin-left: 20px;
+		margin-bottom: 1em;
+		border: 0px;
+		width: 400px;
+		height: 225px;
+	}
+
+	.logogif {
+		width: 440px; 
+		height: 225px;  
+		margin-left: -31px; 
+		margin-bottom: 1em;  
+		border: 1px solid red; 
+		background-image: url("../images/love_park_230629.gif");
+		background-position: 0% 35%;
+	}
+
+	.logogif2 {
+		width: 440px; 
+		height: 125px;  
+		margin-left: -31px; 
+		margin-bottom: 1em;  
+		border: 1px solid red; 
+		background-image: url("../images/github_banner001.gif");
+		background-position: 0% 55%;
+	}
+
+	.bannervideo {
+		width: 440px; 
+		height: 225px;  
+		margin-left: -31px; 
+		margin-bottom: 1em;  
+		border: 1px solid red; 
+		background-color: black;
+	}
+}
+
+#column_left {
+	background: #dcecec;
+	width: 325px;
+	border: 1px dashed red;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	padding: 20px;
+	position: absolute;
+	top: 0px;
+	left: 0px;	
+	margin-top: 1em;
+}
+
+#column_right {
+	background: #ecdcec;
+	width: 200px;
+	border: 1px dashed red;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	padding: 20px;
+	position: absolute;
+	top: 0px;
+	left: 836px;
+	margin-top: 1em;
+}
+
+#title {
+	margin-top: -1em;
+	text-align: center;
+}
+
+#accordion1 {
+	margin-left: 10px;
+}
+
+.header1 {
+	font-size: 2em;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+
+.header2 {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.header3 {
+	font-size: 1.5em;
+	font-weight: bold;
+	text-decoration: none;
+	/*cursor: pointer;*/
+	outline: none;
+	margin-bottom: 1em;
+}
+
+/*
+.header3:hover {
+	text-decoration: underline;
+}
+*/
+
+.category_stuff {
+	color: #770000;
+	margin-top: -1.3em;
+	margin-bottom: 1em;
+}
+
+.smalltext {
+	font-weight: normal;
+	font-size: 0.75em;
+}
+
+.columntext {
+	font-weight: normal;
+	font-size: 0.75em;
+	margin-top: 2em;
+	margin-left: -28px;
+}
+
+.helphead {
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 0.75em;
+	margin-top: 2em;
+	margin-bottom: -1.5em;
+	margin-left: -0.75em;
+	text-decoration: none;
+	outline: none;
+}
+
+.helphead:hover{
+	text-decoration: underline;
+}
+
+.notetype {
+	font-style: italic;
+	color: #550000;
+}
+
+.grayed {
+	color: gray;
+	font-style: italic;
+}
+
+.smallextra {
+	font-size: 1em;
+}
+
+.innerlist {
+	list-style-type: disc; 
+	margin-bottom: 0.5em;
+}
+
+/*     END     */

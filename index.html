@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html> 
+ 
+	<head> 
+		<title>Lightning Artist Toolkit</title> 
+		<link type="text/css" rel="stylesheet" href="./css/index.css"/> 
+	</head> 
+	 
+	<body> 
+		<div id="container"> 
+			<div id="column_center"> 
+				<div id="title"> 
+					<img src="./images/latk-logo.png" style="width: 128px;"><br>
+					<span class="header1">
+						Lightning Artist Toolkit<br>
+						<span style="font-size:0.75em;">
+							A Hand-Drawn Volumetric Animation Pipeline<br> 
+							by <a href="https://fox-gieg.com/latk.html">Nick Fox-Gieg</a>
+						</span>
+					</span>
+				</div> 
+				 
+				<div id="accordion1"> 
+					<div class="category_stuff" style="font-size:1.2em;"> 
+						<br>				
+						<br>
+						<div style="text-align: center; margin-left: -10px;">
+							<nobr>[&nbsp;&nbsp;<a class="demolink" href="https://hdl.handle.net/10315/42999">dissertation</a>&nbsp;&nbsp;]</nobr>
+							<!--<nobr>[&nbsp;&nbsp;<a class="demolink" href="https://fox-gieg.com/files/Nick_Fox-Gieg_-_Lightning_Artist_Toolkit_Dissertation_(2025).pdf">dissertation</a>&nbsp;&nbsp;]</nobr>-->
+							&nbsp;&nbsp;
+							<nobr>[&nbsp;&nbsp;<a class="demolink" href="https://doi.org/10.1145/3664221">paper</a>&nbsp;&nbsp;]</nobr>
+							&nbsp;&nbsp;
+							<nobr>[&nbsp;&nbsp;<a class="demolink" href="https://web.archive.org/web/20250519234527/https://s2024.conference-program.org/presentation/?id=artps_129&sess=sess234">siggraph <span style="font-size: 0.8em;">&rsquo;24</span></a>&nbsp;&nbsp;]</nobr>			
+
+							<br>
+
+							<nobr>[&nbsp;&nbsp;<a class="demolink" href="./spec/">spec</a>&nbsp;&nbsp;]</nobr>
+							&nbsp;&nbsp;
+							<nobr>[&nbsp;&nbsp;<a class="demolink" href="https://github.com/LightningArtist">repos</a>&nbsp;&nbsp;]</nobr>
+							&nbsp;&nbsp;
+							<nobr>[&nbsp;&nbsp;<a class="demolink" href="https://doi.org/10.20383/103.0917">tiltset</a>&nbsp;&nbsp;]</nobr>
+							&nbsp;&nbsp;
+							<nobr>[&nbsp;&nbsp;<a class="demolink" href="./viewer/">viewer</a>&nbsp;&nbsp;]</nobr>							
+							<!--<a class="demolink" href="https://lightningartist.slack.com/">slack</a>-->
+							<!--<a class="demolink" href="https://discord.gg/BvGx4h5D9b">discord</a>-->
+						</div>
+						<br>
+						The Lightning Artist Toolkit (Latk) provides a complete open-source pipeline for <b>hand-drawn volumetric animation</b>&mdash;a common exchange file format, a set of ML models, a large public dataset, and plugins to integrate 3D drawings into a wide range of XR projects. Readable in any popular 3D graphics application and ready to use in real-world production scenarios, Latk's goal is to make creation in 3D as expressive and intuitive as drawing in 2D.<br><br>
+						<i>A note about the name: early animators like Winsor McCay first created their work for a live audience in vaudeville halls&mdash;and they were billed as <nobr>&ldquo;<!--<a href="https://www.19thc-artworldwide.org/autumn20/jarman-on-victor-collodion-and-the-development-of-the-lightning-artist">-->lightning artists<!--</a>-->.&rdquo;</nobr></i>
+						<br><br>
+						<div class="bannervideo">
+						<!--<iframe class="iframeplayer" width="640" height="360" src="https://player.vimeo.com/video/348060808" frameborder="0" allowfullscreen=""></iframe>--> 
+						<iframe class="iframeplayer" width="640" height="360" src="https://player.vimeo.com/video/1083818611" frameborder="0" allowfullscreen=""></iframe> 
+						</div>
+
+						<div class="centeroffset">
+							<i><b>App store demos:</b></i>
+							<ul>
+							    <li><a href="https://sidequestvr.com/app/41616/lightning-artist">SideQuest</a> (Quest)</li>
+							    <li><a href="https://apps.apple.com/us/app/lightning-artist/id1204862214">Apple App Store</a> (iOS)</li>
+							    <li><a href="https://store.steampowered.com/app/1044670/Lightning_Artist">Steam</a> (Vive)</li>
+							    <li><a href="https://play.google.com/store/apps/details?id=com.foxgieg.latk">Google Play</a> (Android)</li>
+							    <!--
+							    <li><a href="">Meta Applab</a> (Quest)</li>
+							    -->
+							</ul>
+
+							<i><b>You can use Latk files in:</b></i>
+							<ul>
+								<li><a href="https://github.com/LightningArtist/latk.js">JavaScript</a> (+ [ <i>npm install latk</i> ])<br>
+									<ul class="innerlist">
+									    <li><a href="https://lightningartist.github.io/latk.js/examples/p5js.html">p5.js</a></li>
+									    <li><a href="https://lightningartist.github.io/latk.js/examples/threejs.html">three.js</a></li>
+									    <li><a href="https://vr.fox-gieg.com">vr.fox-gieg.com</a></li>
+										<li><a href="https://hydra.ojack.xyz/?sketch_id=UbIdu4MYbbHMN7CF">Hydra</a></li>
+									</ul>
+								</li>
+							
+
+								<li><a href="https://github.com/LightningArtist/ofxLatk">openFrameworks</a> (+ <a class="smallextra" href="https://ofxaddons.com/categories/7-animation#:~:text=ofxLatk">ofxaddons.com</a>)</li>
+								
+								<li><a href="https://github.com/LightningArtist/latkProcessing">Processing</a> (+ <a class="smallextra" href="https://processing.org/reference/libraries/">Contribution Manager</a>)</li>
+								
+								<li><a href="https://github.com/LightningArtist/latkpy">Python</a> (+ [ <i>pip install latk</i> ])<br>
+									<ul class="innerlist">
+									    <li><a href="https://github.com/n1ckfg/latk_blender"><b>Blender</b></a><br>
+										<li><a href="https://github.com/n1ckfg/latk_houdini">Houdini</a></li>
+										<li><a href="https://github.com/n1ckfg/latk_maya">Maya / Paint Effects</a> <i>(read)</i></li>
+										<li><a href="https://n1ckfg.github.io/latk_video_001/threejs/">Latk-video</a>, web point cloud streaming</li>
+										<li><a href="https://n1ckfg.github.io/hello_sketchingpy_latk/">Sketchingpy</a></li>
+									</ul>
+								</li>
+								
+								<li><a href="https://github.com/LightningArtist/latkUnity">Unity</a> (+ <a class="smallextra" href="https://openupm.com/packages/org.lightningartist.latk/">OpenUPM</a>)<br>
+									<ul class="innerlist">
+										<li><a href="https://docs.openbrush.app/differences-between-open-brush-and-tilt-brush"><b>Open Brush</b></a> <i>(write)</i></li>
+									    <li><a href="https://github.com/n1ckfg/latkUnity_ARFoundation">ARFoundation phones (iOS, Android)</a></li>
+										<li><a href="https://github.com/n1ckfg/latkUnity_OpenXR">OpenXR headsets (Quest, Vive, Oculus, Index)</a></li>
+									    <li><a href="https://github.com/n1ckfg/latkUnity_OpenXR/tree/quest3-depth">Quest 3 + depth scanner</a></li>
+									    <li><a href="https://github.com/n1ckfg/latkUnity_OpenXR/tree/quest3-mxink">Quest 3 + <a href="https://www.logitech.com/en-us/products/vr/mx-ink.html">MX Ink</a></a></li>
+									</ul>
+								</li>
+								
+								<li><a href="https://github.com/LightningArtist/latkUnreal">Unreal</a><i> (read)</i></li>
+							</ul>
+
+							<!--
+							<i><b>Papers:</b></i>
+							<ul>
+								<li><a href="https://doi.org/10.1145/3664221">&ldquo;Lightning Artist Toolkit: A Hand-Drawn Volumetric Animation Pipeline&rdquo;</a>&nbsp;&nbsp;<span class="smalltext">doi:10.1145/3664221</span>
+							</ul>
+							-->
+
+							<div class="logogif2"></div>
+
+							<i>Additional Unity support:</i>
+							<ul>
+								<li><a href="https://github.com/n1ckfg/AltspaceExample">AltspaceVR</a> (deprecated)</li>
+								<li><a href="https://github.com/n1ckfg/latkUnity_ARCore">ARCore</a>, <a href="https://github.com/n1ckfg/latkUnity_ARKit">ARKit</a></li>
+							    <li><a href="https://github.com/n1ckfg/latkUnity_AzureKinect">Azure Kinect</a></li>
+							    <li><a href="https://github.com/n1ckfg/latkUnity_Cardboard">Google Cardboard</a>, <a href="https://github.com/n1ckfg/latkUnity_Tango">Tango</a>, <a href="https://github.com/n1ckfg/latkUnity_Mirage">Lenovo Mirage</a></li>
+							    <li><a href="https://github.com/n1ckfg/latkUnity_HoloLens">HoloLens</a></li>
+							    <li><a href="https://github.com/n1ckfg/latkUnity_Kinect">Kinect</a></li>
+								<li><a href="https://github.com/n1ckfg/latkUnity_LeapMotion">Leap Motion (stylus mode)</a></li>
+							    <li><a href="https://github.com/n1ckfg/latkUnity_MagicLeap">Magic Leap</a> (deprecated)</li>
+							    <li><a href="https://github.com/n1ckfg/latkUnity_Persee">Orbbec Persee</a></li>
+								<li><a href="https://github.com/n1ckfg/latkUnity_Hydra">Razer Hydra</a></li>
+							    <li><a href="https://github.com/n1ckfg/latkUnity_TiltFive">Tilt Five</a></li>
+								<li><a href="https://github.com/n1ckfg/latkUnity_Vive">Vive</a>, <a href="https://github.com/n1ckfg/latkUnity_ViveSR">Vive Pro + SRWorks</a>, <a href="https://github.com/n1ckfg/latkUnity_ViveXR">Vive XR</a></li>
+								<li><a href="https://github.com/n1ckfg/latkUnity_Wacom">Wacom</a></li>
+								<li><a href="https://github.com/n1ckfg/latkUnity_WMR">Windows Mixed Reality</a></li>
+							</ul>
+
+							<i>Additional Blender I/O formats:</i>
+							<ul>
+							    <li><a href="https://helpx.adobe.com/ca/after-effects/using/scripts.html">After Effects JSX</a> <i>(write)</i></li>
+							    <li><a href="https://blogs.gre.ac.uk/designsupport/3d-realisation/laser-scanning/meshlab-point-cloud-to-mesh/">ASC point cloud</a></li>
+							    <li><a href="https://product.corel.com/help/Painter/540235477/707000/EN/Doc/wwhelp/wwhimpl/common/html/wwhelp.htm?context=Win&file=Getting_Started_with_Scripting.html">Corel Painter script</a></li>
+							    <li><a href="https://fffff.at/gml-week-graffiti-markup-language/">Graffiti Markup Language (GML)</a></li>
+							    <li><a href="https://experiments.withgoogle.com/norman">NormanVR</a></li>
+							    <li><a href="https://joancharmant.com/blog/sharpquill-.net-library-to-read-and-write-quill-files/">Quill</a> <i>(read)</i></li>
+							    <li><a href="https://www.reddit.com/r/SculptrVR/comments/nwc0j7/import_into_sculptvr/">SculptrVR CSV</a></li>
+							    <li><a href="https://support.fab.com/s/article/Animations">Sketchfab FBX sequence</a> <i>(write)</i></li>
+							    <li><a href="https://css-tricks.com/guide-svg-animations-smil/">SVG SMIL animation</a> <i>(write)</i></li>
+							    <li><a href="https://github.com/icosa-foundation/open-brush-python-tools">Open Brush / Tilt Brush</a> <i>(read)</i></li>
+							    <li><a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/lidar-point-cloud-plugin-overview-in-unreal-engine">Unreal XYZ point cloud</a> <i>(write)</i></li>
+							    <li><a href="https://docubase.mit.edu/tools/vrdoodler/">VRDoodler</a></li>
+							</ul>
+
+							<i>Datasets:</i>
+							<ul>
+								<li><a href="https://doi.org/10.20383/103.0917">TiltSet</a>&nbsp;&nbsp;<span class="smalltext">doi:10.20383/103.0917</span></li>
+							    <li><a href="https://doi.org/10.5683/SP3/QGGXYJ">ABC-Draco</a>&nbsp;&nbsp;<span class="smalltext">doi:10.5683/SP3/QGGXYJ</span></li>
+							</ul>
+						</div>	
+	
+						<div class="logogif"></div>
+
+						<center>
+						<span style="font-style:italic;font-size:0.8em;">
+						Supported in part by<br>
+						a SSHRC Doctoral Fellowship (752-2023-2691)<br>
+						and a York CVR-VISTA Doctoral Scholarship.
+						</span>	
+						</center>				
+					</div> 
+				</div>
+			</div> 
+		</div>
+	</body> 
+ 
+</html>
