@@ -1,6 +1,4 @@
 [submodule "viewer"]
 	path = viewer
 	url = https://github.com/n1ckfg/LightningViewer
-[submodule "spec"]
-	path = spec
-	url = https://github.com/LightningArtist/Latk_spec
+
